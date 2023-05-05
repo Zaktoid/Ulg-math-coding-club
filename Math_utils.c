@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 
 typedef struct {double Rz;double Iz;}complex_num;//definition d'un nombre complexe

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 typedef struct {double Rq;double Iq;double Jq; double Kq;}quat;
 typedef struct {double Rz;double Iz;}complex_num;
 typedef struct 

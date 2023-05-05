@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include "Mathutils.h"
 static float PI=3.141592653;
 typedef struct Polygon

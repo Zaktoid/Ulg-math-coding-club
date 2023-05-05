@@ -1,7 +1,7 @@
-#include <stdido.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <draw.h>
-
+#include "utils/draw.h"
+#include <math.h>
 
 void DrawNgone(int xCentre,int yCentre,int rayon,int n,int r,int g , int b)
 {

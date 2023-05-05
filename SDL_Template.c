@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include <math.h>
 void SDL_Exitwitherror(const char *message)
 {
@@ -18,14 +18,14 @@ int main(int argc , char **argv)
 	SDL_Surface *surface;
 	if(SDL_Init(SDL_INIT_VIDEO))
 		SDL_Exitwitherror("failed init");
-	wdw = SDL_CreateWindow("Nom fenêtre",SDL_WINDOWPOS_CENTERED,0,hauteur,hauteur,0);			
-	if(!wdw)
+	window = SDL_CreateWindow("Nom fenêtre",SDL_WINDOWPOS_CENTERED,0,hauteur,hauteur,0);			
+	if(!window)
 		SDL_Exitwitherror("window creation failed");
-	rdrd = SDL_CreateRenderer(wdw,-1,SDL_RENDERER_SOFTWARE);
-	if(!rdrd)
+	rendu = SDL_CreateRenderer(window,-1,SDL_RENDERER_SOFTWARE);
+	if(!rendu)
 		SDL_Exitwitherror("renderer failed");
 	SDL_bool Launched= SDL_TRUE;
-	surface= IMG_load("/Desktop/Projets_ulg/Projet sdl/assets/index.png")
+	surface= IMG_load("/Desktop/Projets_ulg/Projet sdl/assets/index.png");
     while (Launched)
 	{
 		SDL_Event event;
